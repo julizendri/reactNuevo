@@ -1,0 +1,38 @@
+.productoList {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.productoCard {
+    display: grid;
+    border: none;
+    padding: .8rem;
+    background-color: #ebe9ea;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    gap: .3rem;
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.verDetalle {
+    background-color: #caadb9;
+    color: white;
+    padding: .4rem;
+    border-radius: 3px;
+    width: fit-content;
+    justify-self: center;
+    align-content: center;
+    align-self: flex-end;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.verDetalle:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+}

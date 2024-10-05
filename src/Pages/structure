@@ -1,0 +1,53 @@
+src/
+├── components/
+│   ├── CartItemListContenedor/
+│   │   ├── CartItemListContenedor.jsx
+│   │   └── CartItemList/
+│   │       └── CartItemList.jsx
+│   │       └── CartItem/
+│   │           └── CartItem.jsx
+│   ├── CategoriasListContenedor/
+│   │   ├── CategoriasListContenedor.jsx
+│   │   └── CategoriasList/
+│   │       └── CategoriasList.jsx
+│   │       └── Categorias/
+│   │           └── Categorias.jsx
+│   ├── CheckoutItemListContenedor/
+│   │   ├── CheckoutItemListContenedor.jsx
+│   │   └── CheckoutItemList/
+│   │       └── CheckoutItemList.jsx
+│   │       └── CheckoutItem/
+│   │           └── CheckoutItem.jsx
+│   ├── Contadores/
+│   │   └── ContadorCart/
+│   │       └── ContadorCart.jsx
+│   │   └── ContadorDetalle/
+│   │       └── ContadorDetalle.jsx
+│   ├── NavBar/
+│   │   ├── CartWidget.jsx
+│   │   └── NavBar.jsx
+│   ├── Pages/
+│   │   ├── Cart.jsx
+│   │   ├── CategoriasProductos.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── DetalleProducto.jsx
+│   │   ├── Error.jsx
+│   │   ├── Home.jsx
+│   │   └── Productos.jsx
+│   ├── ProductoDetalleContenedor/
+│   │   ├── ProductoDetalleContenedor.jsx
+│   │   └── ProductoDetalle/
+│   │       └── ProductoDetalle.jsx
+│   └── ProductoListContenedor/
+│   │   ├── ProductoListContenedor.jsx
+│   │   └── ProductoList/
+│   │       └── ProductoList.jsx
+│   │       └── Producto/
+│   │           └── Producto.jsx
+├── context/
+│   └── CartContext.jsx
+├── pages/
+│   └── Cart.jsx
+├── App.js
+├── firebase.js
+└── index.js

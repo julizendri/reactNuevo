@@ -1,0 +1,77 @@
+.NavBar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 80rem;
+    color: #333;
+}
+
+.ulPages a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Option {
+    color: #333;
+    border-radius: 5px;
+}
+
+.Option:hover {
+    background-color: #caadb9;
+    color: #333;
+}
+
+.ActiveOption {
+    background-color: #e4dee2;
+    color: white;
+    border-radius: 5px;
+}
+
+.ActiveOption:hover {
+    background-color: #caadb9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdownContenido {
+    display: none;
+    position: absolute;
+    background-color: #e4dee2;
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+    margin-top: .35rem;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.dropdown:hover .dropdownContenido {
+    display: block;
+}
+
+.dropdownContenido a {
+    color: #333;
+    padding: .2rem;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdownContenido a:hover {
+    background-color: #caadb9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.CartWidget {
+    position: relative;
+    cursor: pointer;
+}
