@@ -7,7 +7,7 @@ export const Producto = ({ producto }) => {
             <img className='imgCategorias' src={producto.image} alt={`${producto.name} imagen`} />
             <p>{producto.description}</p>
             <p>Precio: ${producto.price}</p>
-            <Link className='verMas' to={`/productos/${producto.category}/${producto.url}`}>Ver Detalle</Link> {/* Enlace a la página de detalle del producto */}
+            <Link className='verMas' to={`/productos/${producto.category}/${producto.id}`}>Ver Detalle</Link>
         </div>
     );
 };

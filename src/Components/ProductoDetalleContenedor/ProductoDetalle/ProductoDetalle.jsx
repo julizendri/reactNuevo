@@ -1,5 +1,3 @@
-import "./ProductoDetalle.css"
-
 export const ProductoDetalle = ({ producto }) => {
     return (
         <div className="productoDetalleCard">

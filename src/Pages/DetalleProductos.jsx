@@ -1,5 +1,9 @@
+import { ProductoDetalleContenedor } from '../Components/ProductoDetalleContenedor/ProductoDetalleContenedor';
+
 export const DetalleProductos = () => {
     return (
-        <div className="cuerpo">Detalle Producto</div>
+        <div className="cuerpo">
+            <ProductoDetalleContenedor />
+        </div>
     );
 };

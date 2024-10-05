@@ -1,0 +1,29 @@
+.ProductoDetalleContenedor{
+    width: 100%;
+    max-width: 80rem;
+    display: grid;
+}
+
+.productoDetalleCard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.imgDetalle{
+    width: 100%;
+}
+
+.detalleInfo{
+    display: grid;
+}
+
+.h1Detalle{
+    align-items: baseline;
+}
+
+.precioDetalle{
+    align-items: flex-end;
+}

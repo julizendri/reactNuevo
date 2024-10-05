@@ -1,5 +1,6 @@
 import { Producto } from "./Producto/Producto";
 import "./ProductoList.css"
+import { Loader } from "../Shared/Loader/Loader";
 
 export const ProductoList = ({ productos }) => {
     return (
@@ -9,7 +10,7 @@ export const ProductoList = ({ productos }) => {
                     <Producto key={producto.id} producto={producto} />
                 ))
             ) : (
-                <p>No hay productos en esta categoría.</p>
+                <Loader />
             )}
         </div>
     );
