@@ -2,7 +2,7 @@ import { CartContext } from "../../../context/CartContext";
 import { useContext } from "react";
 import { ContadorCart } from "../../Contadores/ContadorCart/ContadorCart";
 
-export const CartItem = ({ id, image, name, price, quantity, stock }) => {
+export const CartItem = ({ id, image, name, price, description, quantity, stock }) => {
     const { removeItem } = useContext(CartContext);
 
     const producto = {
@@ -10,22 +10,26 @@ export const CartItem = ({ id, image, name, price, quantity, stock }) => {
         image: image,
         name: name,
         price: price,
+        description: description,
         quantity: quantity,
         stock: stock
     };
 
     return (
         <div className="cartItem">
-            <h2>{name}</h2>
-            <img className="imagenCheckout" src={image} alt={name} />
-            <p>Precio: ${price}</p>
-
-            <ContadorCart
-                product={producto}
-                initial={quantity}
-            />
-
-            <button onClick={() => removeItem(id)} className="boton">Eliminar</button>
+            <img className="imagenCarrito" src={image} alt={name} />
+            <div className="InfoCarrito">
+                <h2 className="carritoName">{name}</h2>
+                <p className="descriptionCarrito">{description}</p>
+                <p className="precioCarrito">Precio: ${price}</p>
+            </div>
+            <div className="ContadorDiv">
+                <ContadorCart
+                    product={producto}
+                    initial={quantity}
+                />
+                <button onClick={() => removeItem(id)} className="botonCarrito">Eliminar</button>
+            </div>
         </div>
     );
 };

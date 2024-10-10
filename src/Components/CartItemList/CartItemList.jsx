@@ -1,5 +1,6 @@
 import { CartItem } from "./CartItem/CartItem";
 import { Loader } from "../Shared/Loader/Loader";
+import "./CartItemList.css"
 
 export const CartItemList = ({ items }) => {
     return (

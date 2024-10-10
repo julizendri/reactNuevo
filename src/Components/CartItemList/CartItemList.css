@@ -1,0 +1,61 @@
+.CartItemList {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    max-width: 80rem;
+}
+
+.cartItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+}
+
+.InfoCarrito{
+    grid-column: 2;
+    display: grid;
+    gap: 1rem;
+    justify-items: start;
+    align-self: center;
+}
+
+.ContadorDiv {
+    grid-column: 3;
+    display: grid;
+    gap: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.botonCarrito {
+    padding: 0.5rem;
+    background-color: #e4dee2;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+}
+
+.botonCarrito:hover {
+    background-color: #caadb9;
+    color: white;
+}
+
+.precioCarrito {
+    color: #caadb9;
+}
+
+.imagenCarrito {
+    grid-column: 1;
+    width: 100%;
+    border-radius: 5px;
+    justify-self: start;
+    align-self: center;
+}

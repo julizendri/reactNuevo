@@ -19,11 +19,11 @@ export const Cart = () => {
 
     return (
         <div className="cuerpo">
-            <h2>Tu Carrito</h2>
+            <h1>Tu Carrito</h1>
             <CartItemList items={cart} />
             <h3>Total: ${total}</h3>
-            <button onClick={clearCart}>Limpiar Carrito</button>
-            <Link to={'/checkout'}>Checkout</Link>
+            <button onClick={clearCart} className='LimpiarCarrito'>Limpiar Carrito</button>
+            <Link className='CheckoutBoton' to={'/checkout'}>Checkout</Link>
         </div>
     );
 };

@@ -60,3 +60,32 @@ footer {
 .textoError {
     color: #caadb9;
 }
+
+.CheckoutBoton {
+    padding: .3rem .7rem;
+    background-color: #caadb9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.CheckoutBoton:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+}
+
+.LimpiarCarrito {
+    padding: .3rem .7rem;
+    background-color: #ebe9ea;
+    font-size: .8rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.LimpiarCarrito:hover{
+    background-color: #e4dee2;
+}
