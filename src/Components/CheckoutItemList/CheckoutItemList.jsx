@@ -1,15 +1,18 @@
-import { CheckoutItem } from "./CheckoutItem/CheckoutItem";
-import { Loader } from "../Shared/Loader/Loader";
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
+import {CheckoutItem} from './CheckoutItem/CheckoutItem';
 
-export const CheckoutItemList = ({ items }) => {
+export const CheckoutItemList = () => {
+    const { cart } = useContext(CartContext);
+
     return (
-        <div className="CheckoutItemList">
-            {items.length > 0 ? (
-                items.map(item => (
-                    <CheckoutItem key={item.id} {...item} />
-                ))
+        <div className="checkoutItemList">
+            {cart.length === 0 ? (
+                <p>No hay productos en el carrito.</p>
             ) : (
-                <Loader />
+                cart.map(item => (
+                    <CheckoutItem key={item.id} item={item} />
+                ))
             )}
         </div>
     );

@@ -23,6 +23,7 @@ export const Cart = () => {
             <CartItemList items={cart} />
             <h3>Total: ${total}</h3>
             <button onClick={clearCart}>Limpiar Carrito</button>
+            <Link to={'/checkout'}>Checkout</Link>
         </div>
     );
 };
