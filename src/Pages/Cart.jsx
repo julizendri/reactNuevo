@@ -21,7 +21,7 @@ export const Cart = () => {
         <div className="cuerpo">
             <h2>Tu Carrito</h2>
             <CartItemList items={cart} />
-            <h3>Total: ${total.toFixed(2)}</h3>
+            <h3>Total: ${total}</h3>
             <button onClick={clearCart}>Limpiar Carrito</button>
         </div>
     );

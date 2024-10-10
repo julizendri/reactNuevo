@@ -1,12 +1,12 @@
-import { CartItem } from "./CartItem/CartItem";
+import { CheckoutItem } from "./CheckoutItem/CheckoutItem";
 import { Loader } from "../Shared/Loader/Loader";
 
-export const CartItemList = ({ items }) => {
+export const CheckoutItemList = ({ items }) => {
     return (
-        <div className="CartItemList">
+        <div className="CheckoutItemList">
             {items.length > 0 ? (
                 items.map(item => (
-                    <CartItem key={item.id} {...item} />
+                    <CheckoutItem key={item.id} {...item} />
                 ))
             ) : (
                 <Loader />
