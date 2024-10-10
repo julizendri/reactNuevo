@@ -1,0 +1,44 @@
+.contadorCart {
+    width: fit-content;
+    padding: .5rem;
+    border: 1px solid #b2b2b279;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .3rem;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #ebe9ea;
+}
+
+.botonMenos,
+.botonMas {
+    padding: .3rem .7rem;
+    background-color: #ebe9ea;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botonMenos:hover,
+.botonMas:hover {
+    border-radius: 5px;
+    background-color: #e4dee2;
+}
+
+.botonMenos {
+    border-right: 1px solid #b2b2b279;
+}
+
+.botonMas {
+    border-left: 1px solid #b2b2b279;
+}
+
+span{
+    text-align: center;
+}
+
+.botonMas:disabled {
+    background-color: #cbcbcb;
+    cursor: not-allowed;
+    border-radius: 5px;
+}

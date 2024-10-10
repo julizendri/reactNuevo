@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../../../context/CartContext';
-
+import "../Contador.css"
 export const ContadorCart = ({ product, initial }) => { 
     const { increaseQuantity, decreaseQuantity } = useContext(CartContext);
 
@@ -14,11 +14,11 @@ export const ContadorCart = ({ product, initial }) => {
 
     return (
         <div className="contadorCart">
-            <button onClick={decrease} className="boton">-</button>
+            <button onClick={decrease} className="botonMenos">-</button>
             <span>{initial}</span>
             <button 
                 onClick={increase} 
-                className="boton" 
+                className="botonMas" 
                 disabled={initial >= product.stock}
             >
                 +
