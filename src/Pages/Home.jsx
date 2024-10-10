@@ -1,4 +1,4 @@
-import { CategoriasListContenedor } from '../Components/CategoriasListContenedor/CategoriasListContenedor';
+import { CategoriasListContenedor } from "../Components/CategoriasListContenedor/CategoriasListContenedor";
 
 export const Home = () => {
     return (

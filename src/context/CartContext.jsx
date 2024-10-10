@@ -34,7 +34,14 @@ export const CartProvider = ({ children }) => {
     const total = cart.reduce((acc, { price, quantity }) => acc + price * quantity, 0).toFixed(2);
 
     const increaseQuantity = (item) => {
-        addItem(item, 1);
+        const existingItem = cart.find(prod => prod.id === item.id);
+        if (existingItem) {
+            if (existingItem.quantity < item.stock) {
+                addItem(item, 1);
+            }
+        } else {
+            addItem(item, 1);
+        }
     };
 
     const decreaseQuantity = (item) => {
