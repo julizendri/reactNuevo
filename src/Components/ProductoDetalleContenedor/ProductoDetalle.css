@@ -1,29 +1,34 @@
-.ProductoDetalleContenedor{
+.ProductoDetalleContenedor {
     width: 100%;
     max-width: 80rem;
     display: grid;
 }
 
-.productoDetalleCard{
+.productoDetalleCard {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr .5fr;
     gap: 1rem;
     padding: 1rem 0;
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
 }
 
-.imgDetalle{
+.imgDetalle {
     width: 100%;
 }
 
-.detalleInfo{
+.detalleInfo {
     display: grid;
+    justify-items: center;
+    border: none;
 }
 
-.h1Detalle{
-    align-items: baseline;
+.h1Detalle {
+    align-items: self-start;
 }
 
-.precioDetalle{
-    align-items: flex-end;
+.precioDetalle {
+    align-self: self-end;
 }

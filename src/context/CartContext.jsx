@@ -3,12 +3,7 @@ import { createContext, useState } from "react";
 export const CartContext = createContext({
     cart: [],
     totalQuantity: 0,
-    total: 0,
-    addItem: () => {},
-    removeItem: () => {},
-    clearCart: () => {},
-    increaseQuantity: () => {},
-    decreaseQuantity: () => {},
+    total: 0
 });
 
 export const CartProvider = ({ children }) => {
@@ -16,7 +11,7 @@ export const CartProvider = ({ children }) => {
 
     const addItem = (item, quantity) => {
         const existingItemIndex = cart.findIndex(prod => prod.id === item.id);
-        
+
         if (existingItemIndex > -1) {
             const updatedCart = [...cart];
             updatedCart[existingItemIndex].quantity += quantity;
@@ -37,6 +32,7 @@ export const CartProvider = ({ children }) => {
 
     const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
     const total = cart.reduce((acc, { price, quantity }) => acc + price * quantity, 0).toFixed(2);
+
     const increaseQuantity = (item) => {
         addItem(item, 1);
     };
