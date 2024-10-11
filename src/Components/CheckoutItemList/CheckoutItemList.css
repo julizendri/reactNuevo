@@ -1,0 +1,15 @@
+.botonFinalizar {
+    padding: .3rem .7rem;
+    font-size: 1rem;
+    background-color: #caadb9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.botonFinalizar:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
+}

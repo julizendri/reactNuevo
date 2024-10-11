@@ -75,3 +75,7 @@
     position: relative;
     cursor: pointer;
 }
+
+.cartItemCount{
+    margin-left: 1px;
+}

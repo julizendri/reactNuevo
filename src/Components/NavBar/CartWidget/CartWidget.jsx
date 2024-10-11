@@ -11,9 +11,9 @@ export const CartWidget = () => {
     return (
         <Link to='/cart' className="cartWidget">
             <FaShoppingCart />
-            {totalItems > 0 && (
+            {totalItems > 0 ? (
                 <span className="cartItemCount">{totalItems}</span>
-            )}
+            ):(<span className="cartItemCount">0</span>)}
         </Link>
     );
 };
