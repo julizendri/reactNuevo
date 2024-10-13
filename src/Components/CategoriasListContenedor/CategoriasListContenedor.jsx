@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { CategoriasList } from './CategoriasList/CategoriasList';
+import { Loader } from '../Shared/Loader/Loader';
 import "./CategoriasListContenedor.css"
 
 export const CategoriasListContenedor = () => {
@@ -23,7 +24,7 @@ export const CategoriasListContenedor = () => {
             {categories.length > 0 ? (
                 <CategoriasList categories={categories} />
             ) : (
-                <span>Cargando categorias...</span>
+                <Loader/>
             )}
         </div>
     );

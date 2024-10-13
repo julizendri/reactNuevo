@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
 import { CartItemList } from '../Components/CartItemList/CartItemList';
-
+import { NoProductos } from '../Components/Shared/NoProducts/NoProducts';
 
 export const Cart = () => {
     const { cart, total, totalQuantity, clearCart } = useContext(CartContext);
@@ -10,7 +10,7 @@ export const Cart = () => {
     if (totalQuantity === 0) {
         return (
             <div className="cuerpo">
-                <h1>No hay productos en el carrito</h1>
+                <NoProductos/>
                 <Link to='/productos'>Ver Productos</Link>
                 <Link to='/'>Ir al Inicio</Link>
             </div>
