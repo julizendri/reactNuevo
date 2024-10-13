@@ -89,3 +89,7 @@ footer {
 .LimpiarCarrito:hover{
     background-color: #e4dee2;
 }
+
+.noProduct{
+    text-align: center;
+}

@@ -1,3 +1,3 @@
 export const NoProductos = () => {
-    return <p>No hay productos en esta categoría.</p>;
+    return <p className="noProduct">No hay productos acá.</p>;
 };

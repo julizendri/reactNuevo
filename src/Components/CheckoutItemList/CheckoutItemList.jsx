@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { CheckoutItem } from './CheckoutItem/CheckoutItem';
+import { NoProductos } from '../Shared/NoProducts/NoProducts';
 import "./CheckoutItemList.css"
 
 export const CheckoutItemList = () => {
@@ -9,16 +10,16 @@ export const CheckoutItemList = () => {
     return (
         <div className="checkoutItemList">
             {cart.length === 0 ? (
-                <p>No hay productos en el carrito.</p>
+                <NoProductos/>
             ) : (
                 cart.map(item => (
-                    <div>
+                    <div className='ListaCheckout'>
                         <CheckoutItem key={item.id} item={item} />
-                        <h2>Total: ${total}</h2>
-                        <button className="botonFinalizar">Finalizar Compra</button>
                     </div>
                 ))
             )}
+            <h2>Total: ${total}</h2>
+            <button className="botonFinalizar" disabled={cart.length === 0}>Finalizar Compra</button>
         </div>
     );
 };

@@ -21,9 +21,9 @@ export const CartItem = ({ id, image, name, price, description, quantity, stock 
             <div className="InfoCarrito">
                 <h2 className="carritoName">{name}</h2>
                 <p className="descriptionCarrito">{description}</p>
-                <p className="precioCarrito">Precio: ${price}</p>
             </div>
             <div className="ContadorDiv">
+            <p className="precioCarrito">Precio: ${price * quantity}</p>
                 <ContadorCart
                     product={producto}
                     initial={quantity}
