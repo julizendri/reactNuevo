@@ -8,10 +8,9 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr .5fr;
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 2rem;
     box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.2);
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 5px;
 }
 
@@ -20,15 +19,10 @@
 }
 
 .detalleInfo {
-    display: grid;
-    justify-items: center;
-    border: none;
-}
-
-.h1Detalle {
-    align-items: self-start;
-}
-
-.precioDetalle {
-    align-self: self-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    text-align: left;
 }

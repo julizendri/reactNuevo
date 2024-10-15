@@ -42,3 +42,30 @@ span{
     cursor: not-allowed;
     border-radius: 5px;
 }
+
+.contadorDetalle{
+    display: grid;
+    gap: .5rem;
+    align-items: center;
+    align-self: center;
+}
+
+.botonAgregar{
+    padding: .3rem .7rem;
+    background-color: #ebe9ea;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    border: 1px solid #b2b2b279;
+}
+
+.botonAgregar:hover {
+    border-radius: 5px;
+    background-color: #e4dee2;
+}
+
+.botonAgregar:disabled{
+    background-color: #cbcbcb;
+    cursor: not-allowed;
+    border-radius: 5px;
+}
